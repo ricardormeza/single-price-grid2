@@ -1,0 +1,137 @@
+:root {
+    --primario: hsl(179, 62%, 43%);
+    --secundario2: hsl(179, 71%, 46%);
+    --secundario: hsl(71, 73%, 54%);
+    --gris: hsl(204, 43%, 93%);
+    --white: #ffffff;
+    --gris2: hsl(218, 22%, 67%);
+    --oscuro: #212121;
+}
+
+
+/*Globales*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--gris);
+}
+
+.container {
+    width: min(90%, 90rem);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/*  header */
+
+.main {
+    margin: 40px 20px;
+    justify-self: center;
+    box-shadow: 10px 0px 20px #0002;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.top {
+    background-color: var(--white);
+    padding: 20px 20px 20px 50px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.top__header {
+    color: var(--primario);
+    font-size: 4.375rem;
+    font-weight: bold;
+}
+
+.top_subheader {
+    color: var(--secundario);
+    line-height: 25px;
+    font-size: 3rem;
+}
+
+.top_paragraph {
+    color: var(--gris2);
+    line-height: 25px;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+}
+
+
+/* Suscribe*/
+
+.suscribe {
+    background-color: var(--primario);
+    padding: 30px 40px;
+    color: white;
+}
+
+.suscribe__head {
+    font-size: 3rem;
+}
+
+.suscribe__price span {
+    font-size: 4rem;
+}
+
+
+/* Us*/
+
+.us {
+    background-color: var(--secundario2);
+    padding: 30px 40px;
+    color: white;
+}
+
+.us__head {
+    font-size: 3rem;
+}
+
+.suscribe__btn {
+    display: block;
+    background-color: hsl(71, 73%, 54%);
+    width: 100%;
+    padding: 12px;
+    border: 0px solid hsl(71, 73%, 54%);
+    color: #ffff;
+    box-shadow: 10px 0px 20px #0002;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+    .suscribe__btn {
+        width: 50%;
+    }
+}
+
+
+/*Footer*/
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
